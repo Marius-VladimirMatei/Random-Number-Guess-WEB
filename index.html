@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- makes the page responsive -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Guess the number</title>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+
+<body>
+   
+    <div class="container">
+        <div class="form">
+
+            <h2>Guess The Number Game</h2>
+            <h4>Let's find out how quick you are!</h4>
+           
+                <label for="range_selector">Select the range you want to play:</label>
+                 <select id="range_selector">
+                    <option value="50">1 - 50</option>
+                    <option value="100">1 - 100</option>
+                    <option value="200">1 - 200</option>
+                 </select>
+
+            
+            <button id="start_game">Start New Game</button>
+
+            <!-- The input field and infos appears after the user chooses the range to play -->
+            <div id="guess_section" style="display: none;"> 
+                
+                <div class="row">
+                     <input type="number" id="guess_input_field" placeholder="Enter your number inbetween the selected range ">
+    
+                     <button type="submit" id="submit_guess">SUBMIT VALUE</button>
+                     
+                </div>
+
+                <div>
+                    <p id="guess_count">Number of actual attempts: <span id="count">0</span></p>
+                </div>
+
+                <div id="hint"></div>
+               
+
+                <div>
+                    <p id="best_score">Best score: </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+
+</html>
